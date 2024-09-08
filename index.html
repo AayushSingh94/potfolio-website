@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Aayush</span> Singh</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/image_1.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Greetings! As a BTech CSE student, I have a strong interest in competitive programming and machine 
+                        learning (ML). Well-versed in programming languages such as Python, Java, and C++, I utilize my abilities to create
+                        sophisticated solutions for challenging issues. I'm motivated to develop and succeed in the technological industry
+                        because of my solid foundation in algorithmsand data structures as well as my knowledge of machine learning.
+                        I am eager to establish a connection and investigate options with you!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul><li><span>2021-2025</span> <br> Bachelor of technology in Computer Science and Engineering 
+                            <br>Graphic Era Hill University, Dehradun</li>
+                            <li><span>2020-2021</span><br>Intermediate <br>Convent of Jesus and Mary Hampton Court, Mussoorie</li>
+                            <li><span>2018-2019</span><br>High School <br>Convent of Jesus and Mary Hampton Court, Mussoorie</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="skill_1">
+                    <h1 class="sub-title_1">Skills</h1>
+                    <div class="skill">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="95%" style="max-width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">Machine Learning</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">PHP</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_0">
+                    <img src="Images/skills.png" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/emotion.png" >
+                    <div class="layer">
+                        <h3>Emotion Detection</h3>
+                        <p>I have created a Emotion Detection using CNN, Open CV which predict emotion of user based
+                            on their expression.
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/water.png" >
+                    <div class="layer">
+                        <h3>Water Quality and Portability Prediction using Machine Learning</h3>
+                        <p>I have trained a machine learning model to predict water quality and portability using algorithms like 
+                            logistic regression , random Forest,Kth Nearest Neighbour,Support Vector Machine
+                            and hypertuning the parameter of random forest to get the accuracy of 82 percent.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/wine.png" >
+                    <div class="layer">
+                        <h3>Wine Quality Prediction using Machine Learning</h3>
+                        <p>I have trained a machine learning model to predict water quality and portability using algorithms like 
+                            logistic regression , random Forest to get the accuracy of 92 percent.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-envelope" ></i> ayush.singh94115@gmail.com.com</p>
+                    <p><i class="fa fa-phone" ></i> +91-9411511535</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/AayushSingh94"><i class="fa fa-github" ></i></a>
+                        <a href="https://www.linkedin.com/in/aayush-singh-0004a2241/"><i class="fa fa-linkedin-square"></i></a>
+                        
+                    </div>
+                    <div class="btn">
+                        <a href="" download>Download Cv</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message"  rows="6" placeholder="Write a message"></textarea>
+                        <button type="submit" class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Aayush Singh. 25July2024</p>
+        </div>
+    </div>
+
+    
+    <script>
+        function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      var skillsAnimationTriggered = false;
+      function startSkillsAnimation() {
+        var skillBars = document.querySelectorAll(".skill-per");
+        skillBars.forEach(function (skillBar) {
+          skillBar.style.display = "block";
+          skillBar.classList.add("animate-skill"); // Add class to trigger animation
+        });
+      }
+
+      window.addEventListener("scroll", function () {
+        var skillsSection = document.getElementById("skills");
+        if (isInViewport(skillsSection) && !skillsAnimationTriggered) {
+          startSkillsAnimation();
+          skillsAnimationTriggered = true;
+        }
+      });
+    </script>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzhTtsUSiEPjl995Y2nhbTo-0O7xnjUoKpud3_8OYD50R6o6nBW0ATgtFZRIDH2Ky9Z/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
+
+
+
+
+
